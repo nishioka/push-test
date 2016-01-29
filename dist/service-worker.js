@@ -8,7 +8,7 @@ self.addEventListener('push', function(event) {
     // There are many other possible options, for an exhaustive list see the specs:
     //   https://notifications.spec.whatwg.org/
     self.registration.showNotification('Push TEST', {
-      lang: 'ja',
+      lang: 'ja-JP',
       body: '……きこえますか…きこえますか…Push通知のテストです…今…あなたの…心に…直接…Pushしています…Pushができるのは…Chromeだけでは…ありません…Firefoxを…使うのです…',
       icon: 'caesar.jpg',
       vibrate: [500, 100, 500],
