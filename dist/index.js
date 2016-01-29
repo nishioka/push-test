@@ -1,6 +1,5 @@
 var endpoint;
 
-// POST https://young-crag-58580.herokuapp.com/sendNotification?endpoint=https://updates.push.services.mozilla.com/push/gAAAAABWq08vA36BDmucf6DZ_M3I3UcqE8NOCTuf8vEIfqz8Tcw-Qik3P19rFk7Sk6kXnQzqxpPPW479ERL1evoCF70U8Gfq_rJqz6yxq0DRF7DE9p56tujNE1USwXMqVX23FJYNvuwuEoUAI-jTq_qPWJPuBBVYSTSm7_lG01__XZ6mrpe54Mg=&delay=5&ttl=0
 // Register a Service Worker.
 navigator.serviceWorker.register('service-worker.js')
 .then(function(registration) {
@@ -18,6 +17,7 @@ navigator.serviceWorker.register('service-worker.js')
   });
 }).then(function(subscription) {
   endpoint = subscription.endpoint;
+  console.log('endpoint', endpoint);
 
   // Send the subscription details to the server using the Fetch API.
   fetch('./register', {
