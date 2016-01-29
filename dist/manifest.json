@@ -1,8 +1,14 @@
 {
-  "name": "Push Rich - Service Worker Cookbook",
-  "short_name": "push-rich",
+  "name": "Push Test App",
+  "short_name": "push-test",
   "start_url": "./index.html",
+  "icons": [{
+    "src": "./icon256.png",
+    "sizes": "256x256",
+    "type": "image/png"
+  }],
+  "start_url": "https://github.com/nishioka/push-test",
   "display": "standalone",
-  "gcm_sender_id": "829371921996",
+  "gcm_sender_id": "694974425862",
   "gcm_user_visible_only": true
 }
