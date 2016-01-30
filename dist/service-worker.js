@@ -7,8 +7,8 @@ self.addEventListener('push', function(event) {
     self.registration.showNotification('Push TEST', {
       lang: 'ja',
       body: '……きこえますか…きこえますか…Push通知のテストです…今…あなたの…心に…直接…Pushしています…Pushができるのは…Chromeだけでは…ありません…Firefoxを…使うのです…',
-      tag: 'notification',
-      icon: 'caesar.jpg',
+      tag: 'notification0001',
+      icon: 'icon256.png',
       vibrate: [500, 100, 500]
     })
   );

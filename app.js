@@ -50,7 +50,8 @@ app.post('/register', function(req, res) {
 });
 
 app.post('/sendNotification', function(req, res) {
-  setTimeout(function() {
+  console.log('endpoint', req.query.endpoint);
+    setTimeout(function() {
     webPush.sendNotification(req.query.endpoint, req.query.ttl)
     .then(function() {
       res.sendStatus(201);
