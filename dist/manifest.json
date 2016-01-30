@@ -7,7 +7,6 @@
     "sizes": "256x256",
     "type": "image/png"
   }],
-  "start_url": "young-crag-58580.herokuapp.com",
   "display": "standalone",
   "gcm_sender_id": "694974425862",
   "gcm_user_visible_only": true
