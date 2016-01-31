@@ -4,10 +4,10 @@ self.addEventListener('push', function(event) {
   event.waitUntil(
     // There are many other possible options, for an exhaustive list see the specs:
     //   https://notifications.spec.whatwg.org/
-    self.registration.showNotification('Push TEST', {
+    self.registration.showNotification('Pushテスト', {
       lang: 'ja',
-      body: '……きこえますか…きこえますか…Push通知のテストです…今…あなたの…心に…直接…Pushしています…Pushができるのは…Chromeだけでは…ありません…Firefoxを…使うのです…',
-      tag: 'notification0001',
+      body: '……きこえますか…きこえますか…Push通知のテストです…今…あなたの心に…直接…Pushしています…Pushができるのは…Chromeだけでは…ありません…Firefoxを…使うのです…',
+      tag: 'push-notification-tag',
       icon: 'icon256.png',
       vibrate: [500, 100, 500]
     })
